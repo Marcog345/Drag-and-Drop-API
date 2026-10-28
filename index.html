@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - SESI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Quadro Kanban - SESI</h2>
+    
+    <div class="kanban-container">
+        <!-- Coluna Esquerda -->
+        <div class="kanban-column" id="coluna1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="item1">
+                Javascript Prof.Pety
+            </div>
+            <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="item2">
+                Modelar Banco de Dados<br>Prof. Jonh
+            </div>
+            <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="item3">
+                Criar API REST
+            </div>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div class="kanban-column" id="coluna2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- Pode arrastar os itens para aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
